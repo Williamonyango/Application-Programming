@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    /* flex: 1; */
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background: linear-gradient(to right, blue, lightblue);
+}
+.navbar img{
+    width: 72px;    
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    /* background-color: brown; */
+}
+
+.navbar ul{
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+}
+.navbar ul li a{
+    /* margin: 5px; */
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+    /* background-color: red; */
+    border-radius: 10px;
+}
+.navbar ul li a:hover{
+    background-color: aqua;
+}
+
+/* Portfolio Page */
+.portfolio {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.portfolio p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Portfolio Item */
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    padding: 15px 20px 0;
+    margin: 0;
+}
+
+.portfolio-item p {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+footer {
+    margin-bottom: 0;
+    padding: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+

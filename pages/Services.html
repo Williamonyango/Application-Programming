@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Afya Mama</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Services Section -->
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <p>At Afya Mama, we provide a range of specialized services designed to support mothers and children throughout their health journeys. Our offerings are tailored to promote well-being, provide essential resources, and empower families with knowledge and care.</p>
+        </section>
+
+        <section class="service-list">
+            <div class="service-item">
+                <h3>Prenatal and Postnatal Care</h3>
+                <p>Comprehensive support and guidance for mothers before and after childbirth, including health check-ups, nutritional guidance, and counseling.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>Child Immunization</h3>
+                <p>Ensuring that children receive all essential vaccinations on schedule to protect against common diseases and promote healthy development.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>Maternal Health Education</h3>
+                <p>Access to educational resources covering topics like breastfeeding, maternal nutrition, and safe parenting practices.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>Nutrition Counseling</h3>
+                <p>Personalized dietary advice for mothers and children to meet their nutritional needs at every stage of growth and development.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>Mental Health Support</h3>
+                <p>Confidential counseling and mental health support services tailored to the unique challenges of motherhood and child-rearing.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>Community Health Workshops</h3>
+                <p>Interactive workshops designed to engage, educate, and empower communities on maternal and child health topics.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Load Navbar and Footer -->
+    <script>
+        // Load Navbar
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+
+        //load footer
+        fetch("../footer.html")
+            .then(response=> response.text())
+            .then(data=>document.getElementById("footer").innerHTML=data);
+    </script>
+</body>
+</html>

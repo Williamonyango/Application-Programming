@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - Afya Mama</title>
+    <link rel="stylesheet" href="portofolio.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Portfolio Section -->
+    <main>
+        <section class="portfolio">
+            <h2>Our Work and Achievements</h2>
+            <p>At Afya Mama, we are committed to making a difference in maternal and child healthcare. Here are some of our recent projects, partnerships, and initiatives aimed at improving health outcomes for mothers and children.</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="../images/project1.jpeg" alt="Project 1">
+                    <h3>Maternal Health Outreach Program</h3>
+                    <p>Improving maternal health through education and outreach programs in remote areas, providing care to thousands of mothers.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="../images/Project2.jpeg" alt="Project 2">
+                    <h3>Partnership with World Health Organization</h3>
+                    <p>Collaborating with WHO to bring essential resources and vaccines to underserved communities across Kenya.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="../images/Project3.jpeg" alt="Project 3">
+                    <h3>Nutrition for Mothers Program</h3>
+                    <p>Helping mothers access nutritional guidance and resources, ensuring they receive the support needed for healthy pregnancies.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="../images/Project4.jpeg" alt="Project 4">
+                    <h3>Child Immunization Drive</h3>
+                    <p>Partnered with local health providers to immunize over 5,000 children against preventable diseases.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="../images/Project5.jpeg" alt="Project 5">
+                    <h3>Community Health Worker Training</h3>
+                    <p>Equipping community health workers with skills and knowledge to better serve mothers and children in their communities.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="../images/Project6.jpeg" alt="Project 6">
+                    <h3>Support for Rural Health Clinics</h3>
+                    <p>Providing supplies and assistance to rural clinics, ensuring they are well-equipped to meet the needs of mothers and children.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Load Navbar and Footer -->
+    <script>
+         // Load Navbar
+       fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+
+        //load footer
+        fetch("../footer.html")
+            .then(response=> response.text())
+            .then(data=>document.getElementById("footer").innerHTML=data);
+    </script>
+</body>
+</html>

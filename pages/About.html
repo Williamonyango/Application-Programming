@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Afya Mama</title>
+    <link rel="stylesheet" href="about.css">    
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- About Us Section -->
+    <main>
+        <section class="about-us">
+            <h2>About Afya Mama</h2>
+            <p>At Afya Mama, our mission is to empower mothers and children with essential healthcare resources, support, and guidance. We believe that every mother deserves access to trusted information and tools that contribute to a healthy and fulfilling journey through motherhood.</p>
+        </section>
+
+        <section class="mission-vision">
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>Our mission is to support maternal and child health through accessible healthcare services and educational resources. We are dedicated to bridging the gap in healthcare accessibility and enhancing the well-being of mothers and children everywhere.</p>
+            </div>
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>We envision a world where all mothers and children receive the quality care they deserve, empowering communities to thrive through health, knowledge, and resilience.</p>
+            </div>
+        </section>
+
+        <section class="values">
+            <h3>Our Core Values</h3>
+            <ul>
+                <li><strong>Compassion:</strong> We put empathy at the forefront, ensuring that every interaction fosters trust and care.</li>
+                <li><strong>Education:</strong> Knowledge is a powerful tool, and we are committed to making it accessible to all.</li>
+                <li><strong>Innovation:</strong> Through continuous improvement, we embrace new ways to deliver exceptional healthcare services.</li>
+                <li><strong>Community:</strong> We believe in the power of collective support to uplift and transform lives.</li>
+            </ul>
+        </section>
+
+        <section class="our-story">
+            <h3>Our Story</h3>
+            <p>Founded with a vision to make a difference, Afya Mama began as a small initiative focused on providing maternal health support in underserved communities. Today, we have grown into a comprehensive platform, offering a wide range of services and resources to mothers, caregivers, and healthcare professionals across the country. We are continually expanding our reach to support mothers and children on their health journey.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Load Navbar and Footer Scripts -->
+    <script>
+       // Load Navbar
+       fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+
+        //load footer
+        fetch("../footer.html")
+            .then(response=> response.text())
+            .then(data=>document.getElementById("footer").innerHTML=data);
+    </script>
+</body>
+</html>

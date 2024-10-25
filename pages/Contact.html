@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Afya Mama</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>  
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Contact Section -->
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>We’re here to help! If you have questions, concerns, or would like to learn more about our services, feel free to reach out to us.</p>
+        </section>
+
+        <section class="contact-details">
+            <div class="contact-info">
+                <h3>Our Contact Information</h3>
+                <p><strong>Email:</strong> support@afyamama.org</p>
+                <p><strong>Phone:</strong> +254 700 123 456</p>
+                <p><strong>Address:</strong> 123 Health Ave, Nairobi, Kenya</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Full Name">
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email Address">
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Message Subject">
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Your Message"></textarea>
+                
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Load Navbar and Footer -->
+    <script>
+         // Load Navbar
+       fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+
+        //load footer
+        fetch("../footer.html")
+            .then(response=> response.text())
+            .then(data=>document.getElementById("footer").innerHTML=data);
+    </script>
+</body>
+</html>

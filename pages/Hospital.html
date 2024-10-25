@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Afya Mama</title>
+    <link rel="stylesheet" href="hospitals.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Hospitals Section -->
+    <main>
+        <section class="hospital-list">
+            <h2>Available Hospitals</h2>
+            <p>Find a hospital near you to access quality maternal and child healthcare services.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hospital Name</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nairobi Women's Hospital</td>
+                        <td>Nairobi, Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>Kenyatta National Hospital</td>
+                        <td>Nairobi, Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>Aga Khan University Hospital</td>
+                        <td>Mombasa, Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>Moi Teaching and Referral Hospital</td>
+                        <td>Eldoret, Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>Mater Hospital</td>
+                        <td>Nairobi, Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>Coast General Hospital</td>
+                        <td>Mombasa, Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>PCEA Kikuyu Hospital</td>
+                        <td>Kikuyu, Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>Rift Valley Provincial General Hospital</td>
+                        <td>Nakuru, Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>Tenwek Mission Hospital</td>
+                        <td>Bomet, Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>Kisii Teaching and Referral Hospital</td>
+                        <td>Kisii, Kenya</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Load Navbar and Footer -->
+    <script>
+         // Load Navbar
+       fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+
+        //load footer
+        fetch("../footer.html")
+            .then(response=> response.text())
+            .then(data=>document.getElementById("footer").innerHTML=data);
+    </script>
+</body>
+</html>
