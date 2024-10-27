@@ -69,6 +69,9 @@ a:hover {
     max-width: 1000px;
     margin: 0 auto;
 }
+.about-us h2{
+    margin-top: 60px;
+}
 
 .about-us h2, .mission h3, .vision h3, .values h3, .our-story h3 {
     font-size: 2rem;
@@ -162,4 +165,8 @@ footer p {
     .mission-vision {
         flex-direction: column;
     }
+}
+#navbar{
+    position: fixed;
+    width: 100%;
 }

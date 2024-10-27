@@ -61,6 +61,11 @@ main {
     background-color: aqua;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
 
 /* Hero Section */
 .hero {
@@ -96,8 +101,12 @@ main {
     background-color: #007BFF;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: background-color 0.3s;
+}
+.hero-content a {
+    text-decoration: none;
+    color: white;
 }
 
 .btn-primary:hover {
@@ -110,7 +119,18 @@ main {
 .hero-image img {
     max-width: 500px;
 }
+.contact-us{
+    /* background-color: red; */
+    margin-bottom: 60px;
+    padding: 20px;
+    /* background-color: #007BFF; */
+    text-align: center;
+}
 
+.contact-us a{
+    text-decoration: none;
+    color: white;
+}
 footer {
     margin-bottom: 0;
     padding: 20px;
@@ -122,4 +142,9 @@ footer {
 footer p {
     margin: 0;
     font-size: 16px;
+}
+
+#navbar{
+    position: fixed;
+    width: 100%;
 }
